@@ -56,7 +56,7 @@
 
         "boot_wait": "5s",
   
-        "shutdown_command": "sudo init 0",
+        "shutdown_command": "echo 'dummy' | sudo -S shutdown -P now",
   
         "remote_type": "esx5",
         "remote_host": "{{user `esxi_host`}}",
